@@ -1,0 +1,64 @@
+
+            *{
+    
+                left:0;
+                right:0;
+                top:0;
+                margin-left:0;
+                margin-right:0;
+                margin-top:0; 
+            }
+           body{
+               background-color: #34495e;
+               
+           }
+           .container{
+               display:flex;
+                flex-direction:column;
+                justify-content:center;
+                align-items:center;
+                margin-top:100px;
+                width:100%;
+           }
+           .figure-container{
+               fill:transparent;
+               stroke:#fff;
+               stroke-width: 9px;
+               stroke-linecap: round; 
+               visibility:visible;
+               
+
+           }
+           h1{
+               color:white;
+               font-weight:bold;
+               font-size:90px;
+               text-decoration:underline;
+               text-decoration-color:red;
+           }
+           @media only screen and (max-width: 800px) {
+               h1{
+                   font-size:50px;
+               }
+            }
+#_1{
+    visibility:hidden;
+}
+#_2{
+    visibility:hidden;
+}
+#_3{
+    visibility:hidden;
+}
+#_4{
+    visibility:hidden;
+}
+#_5{
+    visibility:hidden;
+}
+#_6{
+    visibility:hidden;
+}
+#title{
+    display:none;
+}
