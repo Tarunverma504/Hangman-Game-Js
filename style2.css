@@ -1,0 +1,177 @@
+*{
+    
+    left:0;
+    right:0;
+    top:0;
+    margin-left:0;
+    margin-right:0; margin-top:0;  } body{ background-color: #34495e;
+   
+} #heading{ color:white; text-align:center; margin-top:20px; font-weight:bold;
+font-size:60px; text-decoration:underline; text-decoration-color:red; }
+.outer{ width:100%;
+    display:flex;
+	flex-direction:column;
+	justify-content:center;
+    align-items:center;
+    /*background-color:white;*/
+
+}
+.container{
+     width:600px;
+     /*background-color:black;*/
+}
+.figure{
+    width:250px;
+    float:left;
+   /* background-color:blue;*/
+    height:250px;
+    max-height:240px;
+}
+.wrong-words{
+    /*background-color:red;*/
+    width:250px;
+    float:right;
+    text-align:left;
+    margin-top:80px;
+    text-decoration: underline;
+    text-decoration-color:black;
+}
+.figure-container{
+    fill:transparent;
+    stroke:#fff;
+    stroke-width: 7px;
+    stroke-linecap: round; 
+    visibility:visible;
+
+}
+#wrong-letters{
+    color:white;
+    font-size:30px;
+    text-align:center;
+    width:200px;
+    margin-top:-8px;
+    background-color:transparent;
+    outline:none;
+    border:none;
+}
+#get-letter{
+    width:150px;
+    height:30px;
+    margin-right:40px;
+    visibility: hidden;
+    border-radius:15px;
+    outline:none;
+    border:none;
+    background-color:white;
+    text-align:center;
+}
+ul{
+	margin:0;
+  	padding:0;
+  	text-decoration: none;
+  	list-style:none;
+  	font-weight:bold;
+  	font-size:40px;
+      text-align:center;
+      color:red;
+}
+li{
+	padding-top:5vh;
+	padding-right:2vw;
+	float:left;
+}
+
+.modal-container{
+    visibility:hidden;
+    background-color: rgba(0, 0, 0, 0.6);
+      position:fixed;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+      animation-name: modalopen;
+      animation-duration:5s;
+}
+.modal{
+    background: #8E2DE2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position:absolute;
+    overflow: hidden;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    max-width:80%;
+    width:450px; 
+    height:200px;
+    text-align:center;
+    
+}
+@keyframes modalopen{
+      from{
+          opacity:0;
+      }
+      to{
+          opacity:1;
+      }
+  }
+#dialog{
+    font-size:30px;
+    margin-top:30px;
+    color:white;
+}
+#dialog-btn{
+    width:150px;
+    height:50px;
+    border-radius:25px;
+    background-color:white;
+    color:rgb(184, 17, 235);
+    border:none;
+    outline:none;
+    cursor: pointer;
+}
+#dialog-btn:hover{
+    background-color:rgb(184, 17, 235);
+    color:white;
+
+}
+#_1{
+    visibility:hidden;
+}
+#_2{
+    visibility:hidden;
+}
+#_3{
+    visibility:hidden;
+}
+#_4{
+    visibility:hidden;
+}
+#_5{
+    visibility:hidden;
+}
+#_6{
+    visibility:hidden;
+}
+
+@media only screen and (max-width: 750px) {
+    #heading{
+        font-size:40px;
+    }
+    .container{
+        width:250px;
+    }
+    .wrong-words{
+        margin-top: 10px;
+    }
+    #get-letter{
+        margin-top:20px;
+        visibility: visible;
+    }
+    #dialog{
+        font-size:20px;
+    }
+ }
