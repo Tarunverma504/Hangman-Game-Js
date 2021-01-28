@@ -13,6 +13,7 @@ function fun(){
 }
 
 
+
 function quiz()
 {
     fetch('https://random-words-api.herokuapp.com/w?n').then((data)=>{ return data.json(); }) 
